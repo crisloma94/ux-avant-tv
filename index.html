@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>UX-Avant</title>
+    <link rel="icon" href="images/favicon.png" type="image/gif" sizes="32x32" />
+    <meta
+      name="description"
+      content="Un espacio para la muestra, la reflexión y el desarrollo del diseño de experiencia de usuario"
+    />
+    <meta name="keywords" content="Conferencias, Barcelona, Elisava, UX" />
+    <meta name="author" content="Cristina López, Luis Brenes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("a").on("click", function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                window.location.hash = hash;
+              }
+            );
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!--Navigation bar-->
+    <nav
+      class="navbar navbar-toggleable-md navbar-color navbar-expand-md navbar-light fixed-top"
+    >
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">UX-Avant</a>
+
+      <!-- Toggler/collapsibe Button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#programme">Programa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Sobre el evento</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link btn btn-primary"
+              href="http://www.elisava.net/es/tv-ux-disenando-la-caja-inteligente"
+              target="_blank"
+              >Inscripción</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+      <section id="home">
+        <div class="container-fluid gradient gradient-height">
+          <div class="row">
+            <div class="col col-md-1 col-lg-3">
+              <div class="circle">
+                <p>1 día</p>
+                <p>4 conferencias</p>
+                <p>8 ponentes</p>
+              </div>
+            </div>
+            <div class="col-sm-10 col-md-10 col-lg-6 main-information">
+              <img class="logo-entero" src="images/logo_entero.svg" />
+              <p class="tagline">
+                Laboratorio del Máster en Diseño y Dirección de Proyectos para
+                Internet de ELISAVA, Escuela Universitaria de Barcelona. Diseño
+                e Ingeniería
+              </p>
+              <h2>TV+UX Diseñando la caja inteligente</h2>
+              <p>18 de enero de 2018</p>
+              <p>Sala Aleix Carrió</p>
+              <p>Entrada gratuita. Aforo limitado</p>
+              <button type="button" class="btn float-btn">
+                <a
+                  href="http://www.elisava.net/es/tv-ux-disenando-la-caja-inteligente"
+                  target="_blank"
+                  >Inscripción</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+        <svg
+          width="100%"
+          height="100"
+          viewBox="0 0 100 102"
+          preserveAspectRatio="none"
+        >
+          <path d="M0 0 L50 90 L100 0 V100 H0" fill="#ECECEC" />
+        </svg>
+      </section>
+      <section id="programme">
+        <div class="container">
+          <div class="row">
+            <h2 class="col-sm-12">PROGRAMA</h2>
+            <div class="col-sm-12">
+              <div class="divider"></div>
+            </div>
+          </div>
+
+          <!-- Cards 1 y 2 -->
+          <div class="row">
+            <div class="col-sm-12 col-lg-5">
+              <label>
+                <input type="checkbox" />
+                <div class="card">
+                  <div class="front">
+                    <img
+                      class="card-img-top"
+                      src="images/cards/card1.png"
+                      alt="Card image cap"
+                    />
+                    <div class="card-block">
+                      <h3 class="card-title">Introducción</h3>
+                      <div class="divider"></div>
+                      <p class="card-text time">17:00-17:10</p>
+                      <p class="card-text ponente">Rosa Llop</p>
+                      <p class="card-text ponente">Ariel Guersenzvaig</p>
+                      <p class="card-text ponente-cv">
+                        Directores del Máster en Diseño y Dirección de Proyectos
+                        para Internet
+                      </p>
+                      <p class="link">Ver más</p>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="card-block">
+                      <h3 class="card-title">Introducción</h3>
+                      <div class="divider"></div>
+                      <p class="card-text time">17:00-17:10</p>
+                      <p class="card-text ponente">Rosa Llop</p>
+                      <p class="card-text ponente">Ariel Guersenzvaig</p>
+                      <p class="card-text">
+                        En el marco del Máster en Diseño y Dirección de
+                        Proyectos para Internet presentamos UX Avant, un espacio
+                        para la muestra, la reflexión y el desarrollo del diseño
+                        de experiencia de usuario como motor para la innovación.
+                        Desde el ámbito docente sentimos la necesidad de mostrar
+                        la relevancia que está tomando el diseño de experiencia
+                        de usuario en distintos sectores profesionales y con
+                        esta jornada queremos ofrecer un punto de encuentro para
+                        el diálogo entre disciplinas y la exhibición de la
+                        práctica profesional de más alto nivel. En esta primera
+                        edición, centramos la jornada en las oportunidades que
+                        el cambio de paradigma televisivo brinda al mundo del
+                        diseño de interacción en general y a la experiencia de
+                        usuario en particular.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </label>
+            </div>
+
+            <div class="col-sm-12 col-md-2">
+              <div class="circle-tl gradient first-circle"></div>
+              <div class="circle-tl gradient right-circle"></div>
+              <div class="line gradient first-line"></div>
+            </div>
+
+            <div class="col-sm-12 col-lg-5 card-right">
+              <label>
+                <input type="checkbox" />
+                <div class="card">
+                  <div class="front">
+                    <img
+                      class="card-img-top"
+                      src="images/cards/card2.png"
+                      alt="Card image cap"
+                    />
+                    <div class="card-block">
+                      <h3 class="card-title">
+                        The unique UX challenges of Interactive TV
+                      </h3>
+                      <div class="divider"></div>
+                      <p class="card-text time">17:15 - 17:45</p>
+                      <p class="card-text ponente">Rosemary Fitzgerald</p>
+                      <p class="card-text ponente-cv">
+                        Creative Director Interactive TV Platforms - UX&D, BBC
+                      </p>
+                      <p class="card-text ponente">Paul Jackson</p>
+                      <p class="card-text ponente-cv">
+                        Senior UX Designer, BBC
+                      </p>
+                      <p class="link">Ver más</p>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="card-block">
+                      <h3 class="card-title">
+                        The unique UX challenges of Interactive TV
+                      </h3>
+                      <div class="divider"></div>
+                      <p class="card-text time">17:15 - 17:45</p>
+                      <p class="card-text ponente">Rosemary Fitzgerald</p>
+                      <p class="card-text ponente">Paul Jackson</p>
+                      <p class="card-text">
+                        El equipo UX de la BBC, medio referente por su carácter
+                        innovador, nos presentará cómo desarrollan la
+                        investigación con usuarios y aplican los resultados en
+                        el diseño de interfaces para sus plataformas
+                        televisivas. Mediante la exposición de casos prácticos
+                        veremos cómo aplican estrategias de investigación con el
+                        fin de optimizar la experiencia televisiva a nivel
+                        ergonómico, cognitivo y funcional.
+                      </p>
+                      <p class="tag">*Esta conferencia será en inglés</p>
+                    </div>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="row justify-content-md-center">
+            <div class="col-lg-6 box-card col-center">
+              <h4>
+                Cómo trasladar los resultados de la investigación a estrategias
+                para el diseño audiovisual
+              </h4>
+              <p>
+                De la mano de sus investigadores, conoceremos los proyectos de
+                innovación audiovisual del Medialab betevé.
+              </p>
+            </div>
+          </div>
+
+          <!-- Cards 3 y 4 -->
+          <div class="row">
+            <div class="col-sm-12 col-lg-5">
+              <label>
+                <input type="checkbox" />
+                <div class="card">
+                  <div class="front">
+                    <img
+                      class="card-img-top"
+                      src="images/cards/card3.png"
+                      alt="Card image cap"
+                    />
+                    <div class="card-block">
+                      <h3 class="card-title">
+                        TVUX Design: ¿Qué quieres ver en la nube?
+                      </h3>
+                      <div class="divider"></div>
+                      <p class="card-text time">17:45 - 18:00</p>
+                      <p class="card-text ponente">Mónica Lorenzo</p>
+                      <p class="card-text ponente">Elena Campo</p>
+                      <p class="card-text ponente-cv">
+                        Investigadoras UX en Gamma UX & Medialab betevé
+                      </p>
+                      <p class="link">Ver más</p>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="card-block">
+                      <h3 class="card-title">
+                        TVUX Design: ¿Qué quieres ver en la nube?
+                      </h3>
+                      <div class="divider"></div>
+                      <p class="card-text time">17:45 - 18:00</p>
+                      <p class="card-text ponente">Mónica Lorenzo</p>
+                      <p class="card-text ponente">Elena Campo</p>
+                      <p class="card-text">
+                        El proyecto TVUX Design está centrado en empatizar con
+                        los usuarios para entender cómo estos conviven con la
+                        televisión. Esta información podrá ayudar a diseñar un
+                        servicio de televisión en la nube (OTT) que conecte con
+                        los ciudadanos y que se pueda integrar en su vida
+                        cotidiana.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </label>
+            </div>
+
+            <div class="col-sm-2">
+              <div class="circle-tl gradient"></div>
+              <div class="line gradient line-between"></div>
+            </div>
+
+            <div class="col-sm-12 col-lg-5">
+              <label>
+                <input type="checkbox" />
+                <div class="card">
+                  <div class="front">
+                    <img
+                      class="card-img-top"
+                      src="images/cards/card4.png"
+                      alt="Card image cap"
+                    />
+                    <div class="card-block">
+                      <h3 class="card-title">
+                        WIGAMI: Gamificación pasiva para fomentar la
+                        visualización de narrativas audiovisuales
+                      </h3>
+                      <div class="divider"></div>
+                      <p class="card-text time">18:00 - 18:15</p>
+                      <p class="card-text ponente">Jordi Pèlach</p>
+                      <p class="card-text ponente-cv">
+                        Investigador en psicología, Associació FITA &amp;
+                        Medialab betevé
+                      </p>
+                      <p class="link">Ver más</p>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="card-block">
+                      <h3 class="card-title">
+                        WIGAMI: Gamificación pasiva para fomentar la
+                        visualización de narrativas audiovisuales
+                      </h3>
+                      <div class="divider"></div>
+                      <p class="card-text time">18:00 - 18:15</p>
+                      <p class="card-text ponente">Jordi Pèlach</p>
+                      <p class="card-text">
+                        Según los últimos descubrimientos en neuropsicología, la
+                        gamificación asegura un mayor interés, aprendizaje y
+                        absorción de conceptos por parte de los usuarios. A
+                        partir de estos hallazgos, Wigami centra su actividad
+                        investigadora en estudiar si gamificar en el consumo
+                        audiovisual de productos de divulgación científica puede
+                        ayudar a fomentar la función educativa e informativa de
+                        un canal público.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="line gradient line-between line-pausa"></div>
+              <div class="cirle-info gradient">
+                <h4>Pausa</h4>
+                <p>18:15 - 18:30</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cards 5 y 6 -->
+          <div class="row">
+            <div class="col-sm-12 col-lg-5">
+              <label>
+                <input type="checkbox" />
+                <div class="card">
+                  <div class="front">
+                    <img
+                      class="card-img-top"
+                      src="images/cards/card5.png"
+                      alt="Card image cap"
+                    />
+                    <div class="card-block">
+                      <h3 class="card-title">
+                        El diseño de interfaces para una experiencia televisiva
+                        multipantalla.
+                      </h3>
+                      <div class="divider"></div>
+                      <p class="card-text time">18:30 - 19:00</p>
+                      <p class="card-text ponente">Silvia Costa</p>
+                      <p class="card-text ponente-cv">
+                        Responsable de diseño digital, CCMA
+                      </p>
+                      <p class="link">Ver más</p>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="card-block">
+                      <h3 class="card-title">
+                        El diseño de interfaces para una experiencia televisiva
+                        multipantalla.
+                      </h3>
+                      <div class="divider"></div>
+                      <p class="card-text time">18:30 - 19:00</p>
+                      <p class="card-text ponente">Silvia Costa</p>
+                      <p class="card-text">
+                        Los contenidos televisivos saltan de pantalla en
+                        pantalla. Esto plantea nuevos retos al diseñar cómo
+                        estos se visualizarán, dónde y en qué interfaces. La
+                        Corporació Catalana de Mitjans Audiovisuals (TV3,
+                        Catalunya Radio) nos presentará cómo trabajan para
+                        identificar cuáles son las soluciones de interfaz que
+                        facilitan el acceso multidispositivo a los nuevos
+                        telespectadores.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </label>
+            </div>
+
+            <div class="col-sm-2">
+              <div class="circle-tl gradient"></div>
+              <div class="line gradient line-between"></div>
+              <div class="circle-tl gradient right-circle"></div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col-sm-12 col-lg-5 card-right">
+              <label>
+                <input type="checkbox" />
+                <div class="card">
+                  <div class="front">
+                    <img
+                      class="card-img-top"
+                      src="images/cards/card6.png"
+                      alt="Card image cap"
+                    />
+                    <div class="card-block">
+                      <h3 class="card-title">
+                        Presentación de los resultados del workshop con el
+                        MediaLab betevé
+                      </h3>
+                      <div class="divider"></div>
+                      <p class="card-text time">19:00 - 19:30</p>
+                      <p class="card-text ponente">
+                        Presentación a cargo de los estudiantes del máster
+                      </p>
+                      <p class="link">Ver más</p>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="card-block">
+                      <h3 class="card-title">
+                        Presentación de los resultados del workshop con el
+                        MediaLab betevé
+                      </h3>
+                      <div class="divider"></div>
+                      <p class="card-text time">19:00 - 19:30</p>
+                      <p class="card-text ponente">
+                        Presentación a cargo de los estudiantes del máster
+                      </p>
+                      <p class="card-text">
+                        Durante dos dias, los estudiantes del máster han
+                        trabajado en el reto de diseñar una experiencia
+                        Cinemátic UX para un servicio OTT que garantice una
+                        experiencia televisiva fluida y sin costuras para un
+                        programa de participación ciudadana de betevé.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12 col-lg-5">
+              <label>
+                <input type="checkbox" />
+                <div class="card">
+                  <div class="front">
+                    <img
+                      class="card-img-top"
+                      src="images/cards/card7.png"
+                      alt="Card image cap"
+                    />
+                    <div class="card-block">
+                      <h3 class="card-title">
+                        El valor de los diseñadores en la creación de
+                        experiencias televisivas
+                      </h3>
+                      <div class="divider"></div>
+                      <p class="card-text time">19:30 - 20:00</p>
+                      <p class="card-text ponente">Natàlia Herèdia, PhD.</p>
+                      <p class="card-text ponente-cv">
+                        Diseñadora e investigadora UX. Gamma UX &amp; Medialab
+                        betevé
+                      </p>
+                      <p class="link">Ver más</p>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="card-block">
+                      <h3 class="card-title">
+                        El valor de los diseñadores en la creación de
+                        experiencias televisivas
+                      </h3>
+                      <div class="divider"></div>
+                      <p class="card-text time">19:30 - 20:00</p>
+                      <p class="card-text ponente">Natàlia Herèdia, PhD.</p>
+                      <p class="card-text">
+                        A modo de conclusión de la jornada, repasaremos los
+                        retos, tendencias y oportunidades que surgen para los
+                        profesionales del diseño ante el nuevo escenario y
+                        ecosistema televisivo.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </label>
+            </div>
+
+            <div class="col-sm-2">
+              <div class="circle-tl gradient"></div>
+              <div class="line gradient line-between line-card-7"></div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="cirle-info gradient">
+                <h4>Network</h4>
+                <p>20:00 - 21:00</p>
+              </div>
+              <div class="line gradient line-between line-networking"></div>
+            </div>
+          </div>
+        </div>
+
+        <svg
+          width="100%"
+          height="100"
+          viewBox="0 0 100 102"
+          preserveAspectRatio="none"
+        >
+          <path d="M0 0 L50 90 L100 0 V100 H0" fill="white" />
+        </svg>
+      </section>
+
+      <section id="about">
+        <div class="container">
+          <h2>SOBRE EL EVENTO</h2>
+          <div class="divider"></div>
+          <div class="row">
+            <div class="col-sm-10 col-lg-7 col-center">
+              <p>
+                UX Avant es la cara visible del laboratorio de investigación del
+                Máster en Diseño y Dirección de Proyectos para Internet.
+              </p>
+              <p>
+                El laboratorio tiene como objetivos el fomento del diálogo entre
+                disciplinas, la exhibición de la práctica profesional, la
+                exploración de prácticas especulativas que fomenten la
+                innovación y la transmisión de conocimiento entre profesionales,
+                investigadores y estudiantes
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 margin-colaborators">
+              <h3>Organizan</h3>
+            </div>
+          </div>
+          <div class="row justify-content-md-center">
+            <div class="col col-lg-3">
+              <img src="images/logo-elisava.png" />
+            </div>
+            <div class="col col-lg-3">
+              <div class="logo-master"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="divider-row"></div>
+              <h3>Curador del programa</h3>
+              <p>Natalia Hèrèdia</p>
+              <h3>Dirección</h3>
+              <p>Rosa Llop y Ariel Guersenzvaig</p>
+              <h3>Coordinación</h3>
+              <p>Irene Serrano, Gestión de Posgrado</p>
+              <h3>Diseño y Comunicación</h3>
+              <p>
+                Alumnos del Máster en Diseño y Dirección de Proyectos para
+                Internet
+              </p>
+              <div class="divider-row"></div>
+              <h3>Colaboran</h3>
+            </div>
+          </div>
+          <div class="row logos-colab align-items-center">
+            <div class="col-sm-12 col-md-4 col-lg-2">
+              <img class="btv" src="images/logo-btv.png" />
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-2">
+              <img src="images/logo-bbc.png" />
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-2">
+              <img src="images/logo-ccma.png" />
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-2">
+              <img src="images/logo-beteve.png" />
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-2">
+              <img src="images/logo-moritz.png" />
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-2">
+              <img src="images/logo-gammaux.svg" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <h3>Síguenos</h3>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-4 col-md-12 align-center">
+              <a
+                class="logo-fb"
+                href="https://www.facebook.com/uxavant.elisava.1"
+                target="_blank"
+              ></a>
+              <a
+                class="logo-lk"
+                href="https://www.linkedin.com/groups/8647067"
+                target="_blank"
+              ></a>
+              <a
+                class="logo-tw"
+                href="https://twitter.com/uxavant"
+                target="_blank"
+              ></a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6 about-bg"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
